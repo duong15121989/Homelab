@@ -1,0 +1,68 @@
+version: '3.9'
+services:
+  wordpress:
+    image: wordpress:php8.2
+    container_name: WordPress
+    hostname: wordpress
+    healthcheck:
+     test: curl -f http://localhost:80/ || exit 1
+    ports:
+      - 8181:80
+    depends_on:
+      db:
+        condition: service_started
+      redis:
+        condition: service_healthy
+      phpmyadmin:
+        condition: service_healthy
+    volumes:
+      - /volume1/docker/wordpress:/var/www/html:rw
+      - /volume1/docker/wordpress/upload.ini:/usr/local/etc/php/conf.d/upload.ini:rw
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: dpham
+      WORDPRESS_DB_PASSWORD: Oliverkendu@9
+      WORDPRESS_DB_NAME: dpham_db
+    restart: on-failure:5
+
+  db:
+    image: mariadb:jammy
+    container_name: WordPress-DB
+    security_opt:
+      - no-new-privileges:true
+    hostname: wordpress-db
+    environment:
+      MYSQL_DATABASE: dpham_db
+      MYSQL_USER: dpham
+      MYSQL_PASSWORD: Oliverkendu@9
+      MYSQL_ROOT_PASSWORD: rootpass
+      TZ: Asia/Bangkok
+    volumes:
+      - /volume1/docker/wordpress/db:/var/lib/mysql:rw
+    restart: on-failure:5
+
+  redis:
+    image: redis
+    hostname: wordpress-redis
+    container_name: WordPress-REDIS
+    user: 1026:100
+    healthcheck:
+     test: ["CMD-SHELL", "redis-cli ping || exit 1"]
+    volumes:
+      - /volume1/docker/wordpress/redis:/data:rw
+    environment:
+      TZ: Asia/Bangkok
+    restart: on-failure:5
+      
+  phpmyadmin:
+    image: phpmyadmin
+    hostname: wordpress-phpmyadmin
+    healthcheck:
+     test: curl -f http://localhost:80/ || exit 1
+    container_name: WordPress-phpMyAdmin
+    ports:
+      - 2500:80
+    environment:
+     PMA_HOST: wordpress-db
+     PMA_PORT: 3306
+    restart: on-failure:5
