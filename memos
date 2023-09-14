@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  memos:
+    container_name: Memos
+    image: neosmemo/memos:latest
+    mem_limit: 4g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    restart: on-failure:5
+    ports:
+      - 5235:5230
+    volumes:
+      - /volume1/docker/memos:/var/opt/memos:rw
