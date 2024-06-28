@@ -2,7 +2,7 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- Synology:
+- LocalHost:
     - Plex:
         href: http://10.0.0.200:32400
         siteMonitor: http://10.0.0.200:32400
@@ -49,12 +49,35 @@
         href: http://10.0.0.200
         siteMonitor: http://10.0.0.200
 
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
+- Synology:
+    - Plex:
+        href: https://plex.cherryken.com
+    - Nas:
+        href: https://nas.cherryken.com
+    - Portainer:
+        href: https://portainer.cherryken.com
+    - Blog-memos:
+        href: https://blog.cherryken.com
+    - Edge:
+        href: https://edge.cherryken.com
+    - Remote-Guacamole:
+        href: https://remote.cherryken.com
+    - Code server:
+        href: https://code.cherryken.com
+    - Lynx:
+        href: https://link.cherryken.com
+    - Synology Music:
+        href: https://music.cherryken.com
+    - WordPress:
+        href: https://cherryken.com
+    - Hommar:
+        href: https://home.cherryken.com
+    - Paperless:
+        href: https://paperless.cherryken.com
+    - Synology Photo:
+        href: https://photo.cherryken.com
+    - Shorlink-Slash:
+        href: https://slash.cherryken.com
+    - Komga:
+        href: https://komga.cherryken.com
 
-- My Third Group:
-    - My Third Service:
-        href: http://localhost/
-        description: Homepage is ߘ
