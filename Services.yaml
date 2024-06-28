@@ -12,22 +12,22 @@
     - Portainer:
         href: http://10.0.0.200:9000
         siteMonitor: http://10.0.0.200:9000
-    - Blog-memos:
+    - Blogmemos:
         href: http://10.0.0.200:5240
         siteMonitor: http://10.0.0.200:5240
     - Edge:
         href: http://10.0.0.200:3429
         siteMonitor: http://10.0.0.200:3429
-    - Remote-Guacamole:
+    - RemoteGuacamole:
         href: http://10.0.0.200:8348
         siteMonitor: http://10.0.0.200:8348
-    - Code server:
+    - CodeServer:
         href: http://10.0.0.200:8377
         siteMonitor: http://10.0.0.200:8377
     - Lynx:
         href: http://10.0.0.200:3485
         siteMonitor: http://10.0.0.200:3485
-    - Synology Music:
+    - SynologyMusic:
         href: http://10.0.0.200:8800
         siteMonitor: http://10.0.0.200:8800
     - WordPress:
@@ -39,10 +39,10 @@
     - Paperless:
         href: http://10.0.0.200:8777
         siteMonitor: http://10.0.0.200:8777
-    - Synology Photo:
+    - SynologyPhoto:
         href: http://10.0.0.200:5080
         siteMonitor: http://10.0.0.200:5080
-    - Shorlink-Slash:
+    - ShorlinkSlash:
         href: http://10.0.0.200:5231
         siteMonitor: http://10.0.0.200:5231
     - Komga:
@@ -56,17 +56,17 @@
         href: https://nas.cherryken.com
     - Portainer:
         href: https://portainer.cherryken.com
-    - Blog-memos:
+    - Blogmemos:
         href: https://blog.cherryken.com
     - Edge:
         href: https://edge.cherryken.com
-    - Remote-Guacamole:
+    - RemoteGuacamole:
         href: https://remote.cherryken.com
-    - Code server:
+    - CodeServer:
         href: https://code.cherryken.com
     - Lynx:
         href: https://link.cherryken.com
-    - Synology Music:
+    - SynologyMusic:
         href: https://music.cherryken.com
     - WordPress:
         href: https://cherryken.com
@@ -74,9 +74,9 @@
         href: https://home.cherryken.com
     - Paperless:
         href: https://paperless.cherryken.com
-    - Synology Photo:
+    - SynologyPhoto:
         href: https://photo.cherryken.com
-    - Shorlink-Slash:
+    - ShorlinkSlash:
         href: https://slash.cherryken.com
     - Komga:
         href: https://komga.cherryken.com
