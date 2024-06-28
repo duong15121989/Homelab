@@ -1,0 +1,61 @@
+- Localhost:
+    - Synology:
+        - abbr: NAS
+          href: http://10.0.0.200:5000
+          description: Nas Synology 5000
+    - Portainer:
+        - abbr: POR
+          href: http://10.0.0.200:9000
+          description: Portainer 9000
+    - Blog:
+        - abbr: BLOG
+          href: http://10.0.0.200:5240
+          description: Memos 5240
+    - Plex:
+        - abbr: PLEX
+          href: http://10.0.0.200:32400
+          description: Plex 32400
+    - Edge:
+        - abbr: EDGE
+          href: http://10.0.0.200:3429
+          description: Edge 3429
+    - Remote:
+        - abbr: REM
+          href: http://10.0.0.200:8348
+          description: Guacamole 8348 
+    - Code server:
+        - abbr: CODE
+          href: http://10.0.0.200:8377
+          description: Code server 8377
+    - Lynx:
+        - abbr: LINK
+          href: http://10.0.0.200:3485
+          description: Lynx 3485
+    - Music:
+        - abbr: MUS
+          href: http://10.0.0.200:8800
+          description: Synology music 8800
+    - WordPress:
+        - abbr: WEB
+          href: http://10.0.0.200:8181
+          description: WordPress 8181
+    - Home:
+        - abbr: HOM
+          href: http://10.0.0.200:4755
+          description: Hommar 4755
+    - Paperless:
+        - abbr: DOC
+          href: http://10.0.0.200:8777
+          description: Paperless 8777
+    - Photo:
+        - abbr: PIC
+          href: http://10.0.0.200:5080
+          description: Synology Photo 5080
+    - Slash:
+        - abbr: LINK
+          href: http://10.0.0.200:5231
+          description: Slash 5231
+    - Komga:
+        - abbr: COM
+          href: http://10.0.0.200
+          description: Komga 80
