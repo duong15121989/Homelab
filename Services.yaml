@@ -2,7 +2,7 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- LocalHost:
+- Localhosts:
     - Plex:
         href: http://10.0.0.200:32400
         siteMonitor: http://10.0.0.200:32400
