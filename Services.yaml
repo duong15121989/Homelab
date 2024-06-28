@@ -2,10 +2,52 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- Synology:
+    - Plex:
+        href: http://10.0.0.200:32400
+        siteMonitor: http://10.0.0.200:32400
+    - Nas:
+        href: http://10.0.0.200:5000
+        siteMonitor: http://10.0.0.200:5000
+    - Portainer:
+        href: http://10.0.0.200:9000
+        siteMonitor: http://10.0.0.200:9000
+    - Blog-memos:
+        href: http://10.0.0.200:5240
+        siteMonitor: http://10.0.0.200:5240
+    - Edge:
+        href: http://10.0.0.200:3429
+        siteMonitor: http://10.0.0.200:3429
+    - Remote-Guacamole:
+        href: http://10.0.0.200:8348
+        siteMonitor: http://10.0.0.200:8348
+    - Code server:
+        href: http://10.0.0.200:8377
+        siteMonitor: http://10.0.0.200:8377
+    - Lynx:
+        href: http://10.0.0.200:3485
+        siteMonitor: http://10.0.0.200:3485
+    - Synology Music:
+        href: http://10.0.0.200:8800
+        siteMonitor: http://10.0.0.200:8800
+    - WordPress:
+        href: http://10.0.0.200:8181
+        siteMonitor: http://10.0.0.200:8181
+    - Hommar:
+        href: http://10.0.0.200:4755
+        siteMonitor: http://10.0.0.200:4755
+    - Paperless:
+        href: http://10.0.0.200:8777
+        siteMonitor: http://10.0.0.200:8777
+    - Synology Photo:
+        href: http://10.0.0.200:5080
+        siteMonitor: http://10.0.0.200:5080
+    - Shorlink-Slash:
+        href: http://10.0.0.200:5231
+        siteMonitor: http://10.0.0.200:5231
+    - Komga:
+        href: http://10.0.0.200
+        siteMonitor: http://10.0.0.200
 
 - My Second Group:
     - My Second Service:
